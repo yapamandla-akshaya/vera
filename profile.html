@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-main">
+                <h1>Welcome, <span id="username"></span>!</h1>
+                <p>Manage your travel plans and recently viewed destinations.</p>
+            </div>
+            <nav class="auth-nav">
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="recent-views">
+            <h2>Recently Viewed Destinations</h2>
+            <div id="recent-views-container">
+                <!-- Recently viewed items will be loaded here -->
+            </div>
+        </section>
+
+        <section id="checklist">
+            <h2>My Travel Checklist</h2>
+            <form id="checklist-form">
+                <input type="text" id="checklist-item" placeholder="Add a new item..." required>
+                <button type="submit">Add</button>
+            </form>
+            <ul id="checklist-container">
+                <!-- Checklist items will be loaded here -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
