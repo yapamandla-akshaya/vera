@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vera - Your Travel Advisor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-main">
+                <h1>   Vera - Your Personal Travel Advisor</h1>
+                <p>Discover your next adventure based on your preferences and fears!</p>
+            </div>
+            <nav class="auth-nav">
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form id="travel-quiz">
+            <section class="question">
+                <h2>What kind of places do you want to visit?</h2>
+                <div class="options">
+                    <label>
+                        <input type="checkbox" name="place_type" value="beach">
+                        <img src=icons/beach.jpg alt="Beach">
+                        <span>Beach</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="place_type" value="mountain">
+                        <img src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Mountain">
+                        <span>Mountain</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="place_type" value="city">
+                        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="City">
+                        <span>City</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="place_type" value="forest">
+                        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Forest">
+                        <span>Forest</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="place_type" value="desert">
+                        <img src="https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Desert">
+                        <span>Desert</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="place_type" value="historical">
+                        <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Historical">
+                        <span>Historical</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="place_type" value="island">
+                        <img src=icons/island.jpg alt="Island">
+                        <span>Island</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="place_type" value="countryside">
+                        <img src=icons/country.jpg alt="Countryside">
+                        <span>Countryside</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="question">
+                <h2>What are your fears?</h2>
+                <div class="options">
+                    <label>
+                        <input type="checkbox" name="fears" value="heights">
+                        <img src=icons/height.jpg alt="height">
+                        <span>Heights</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="fears" value="water">
+                        <img src=icons/water.jpg alt="Deep Water">
+                        <span>Deep Water</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="fears" value="crowds">
+                        <img src=icons/crowd.jpg alt="Crowds">
+                        <span>Crowds</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="fears" value="insects">
+                        <img src=icons/insect.jpg alt="Insects">
+                        <span>Insects</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="fears" value="dark">
+                        <img src=icons/dark.jpg alt="The Dark">
+                        <span>The Dark</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="fears" value="flying">
+                        <img src=icons/fly.jpg alt="Flying">
+                        <span>Flying</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="fears" value="animals">
+                        <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Animals">
+                        <span>Animals</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="fears" value="enclosed">
+                        <img src=icons/close.jpg alt="Enclosed Spaces">
+                        <span>Enclosed Spaces</span>
+                    </label>
+                </div>
+            </section>
+
+            <button type="submit">Get Recommendations</button>
+        </form>
+
+        <section id="results">
+            <h2>Recommended Destinations</h2>
+            <div id="destinations">
+                </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
